@@ -1,0 +1,227 @@
+.home-page {
+  background-image: url("../assets/dolphin.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 115vh;
+}
+.home-page .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+  height: 100%;
+}
+.home-page .box .activities {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.home-page .box .activities .logo, .home-page .box .activities .activity {
+  position: absolute;
+}
+.home-page .box .activities .logo {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  background: #FFF;
+  border-radius: 50%;
+  width: 232.773px;
+  height: 232.86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .box .activities .activity {
+  background-position: center;
+  background-size: 100% 100%;
+  width: 250px;
+  height: 220px;
+}
+.home-page .box .activities .activity.my_books {
+  top: 0;
+  left: 50%;
+  transform: translateX(50%);
+  background-image: url("../assets/layers/my_books.svg");
+}
+.home-page .box .activities .activity.read_and_think {
+  top: 50%;
+  left: 50%;
+  transform: translate(115%, -100%);
+  background-image: url("../assets/layers/read_and_think.svg");
+}
+.home-page .box .activities .activity.play_and_learn {
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -30%);
+  background-image: url("../assets/layers/play_and_learn.svg");
+}
+.home-page .box .activities .activity.watch_and_fun {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-image: url("../assets/layers/watch_and_fun.svg");
+}
+.home-page .box .activities .activity.print_and_colorize {
+  top: 50%;
+  left: 0%;
+  transform: translate(100%, -30%);
+  background-image: url("../assets/layers/print_and_colorize.svg");
+}
+.home-page .box .activities .activity.my_tasks {
+  top: 50%;
+  left: 0%;
+  transform: translate(125%, -120%);
+  background-image: url("../assets/layers/my_tasks.svg");
+}
+.home-page .box .activities .activity.challenges {
+  top: 0;
+  left: 0;
+  transform: translate(170%, -30%);
+  background-image: url("../assets/layers/challenges.svg");
+}
+
+.home-page {
+  background-image: url("../assets/dolphin.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+}
+.home-page .container {
+  position: relative;
+  height: 100%;
+}
+.home-page .container .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background: #FFF;
+  border-radius: 50%;
+  width: 200.773px;
+  height: 200.86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.home-page .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+.home-page .container .activity {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home-page .container .activity a {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+.home-page .container .activity img {
+  position: absolute;
+}
+.home-page .container .activities.part-one {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-page .container .activities.part-two {
+  display: flex;
+  justify-content: space-between;
+  gap: 30em;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.home-page .container .activities.part-three {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}
+.home-page .container .activity.my_books {
+  background-image: url("../assets/layers/my_books.svg");
+  width: 281.824px;
+  height: 235.099px;
+}
+.home-page .container .activity.my_books img {
+  top: 0%;
+  right: 10%;
+}
+.home-page .container .activity.read_and_think {
+  background-image: url("../assets/layers/read_and_think.svg");
+  width: 300.909px;
+  height: 241.32px;
+}
+.home-page .container .activity.read_and_think img {
+  top: 20%;
+  right: 0;
+}
+.home-page .container .activity.play_and_learn {
+  background-image: url("../assets/layers/play_and_learn.svg");
+  width: 300.154px;
+  height: 236.326px;
+}
+.home-page .container .activity.play_and_learn img {
+  bottom: -25%;
+  right: 15%;
+}
+.home-page .container .activity.watch_and_fun {
+  background-image: url("../assets/layers/watch_and_fun.svg");
+  transform: translateY(4em);
+  width: 281.824px;
+  height: 235.099px;
+}
+.home-page .container .activity.watch_and_fun img {
+  bottom: -10%;
+  left: -5%;
+}
+.home-page .container .activity.print_and_colorize {
+  background-image: url("../assets/layers/print_and_colorize.svg");
+  width: 300.909px;
+  height: 241.32px;
+}
+.home-page .container .activity.print_and_colorize img {
+  bottom: 10%;
+  left: -10%;
+}
+.home-page .container .activity.my_tasks {
+  background-image: url("../assets/layers/my_tasks.svg");
+  width: 285.909px;
+  height: 241.32px;
+}
+.home-page .container .activity.my_tasks img {
+  bottom: 5%;
+  left: -20%;
+}
+.home-page .container .activity.challenges {
+  background-image: url("../assets/layers/challenges.svg");
+  width: 255.022px;
+  height: 240.255px;
+}
+.home-page .container .activity.challenges a {
+  font-size: 24px;
+}
+.home-page .container .activity.challenges img {
+  top: 0;
+  left: 15%;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,294 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  text-align: right;
+  background-color: #F7F7F7;
+}
+
+.transparent-button {
+  background: transparent;
+  border: none;
+}
+
+.intro {
+  background-image: url("../assets/sunny_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+.intro .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+}
+.intro .flex-box .info {
+  width: 100%;
+}
+.intro .flex-box .info .header .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.intro .flex-box .info .header .title img {
+  width: 80px;
+  height: 80px;
+}
+.intro .flex-box .info .header .title span {
+  font-size: 25px;
+  color: #28508B;
+  font-weight: 700;
+}
+.intro .flex-box .info .filteration .search-input {
+  background: #FFF;
+  border: 1px solid #C6C6C6;
+  border-radius: 12px;
+  height: 50px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.intro .flex-box .info .filteration .search-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.intro .flex-box .info .filteration .form-group {
+  margin: 0;
+}
+.intro .flex-box .info .filteration .form-group label {
+  font-size: 20px;
+  color: #292D32;
+  font-weight: 700;
+}
+.intro .flex-box .info .filteration .form-group input.form-control, .intro .flex-box .info .filteration .form-group select.form-control {
+  height: 50px;
+  padding: 5px 15px;
+  border: 1px solid #C6C6C6;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.grid-area {
+  margin: 1em 0;
+}
+.grid-area .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
+.grid-area .book img.book-img {
+  width: 100%;
+  height: 100%;
+}
+.grid-area .book span.book-name {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.grid-area .story, .grid-area .video {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+.grid-area .story img.story-img, .grid-area .story .video-img, .grid-area .video img.story-img, .grid-area .video .video-img {
+  width: 100%;
+  height: 100%;
+}
+.grid-area .story span.story-name, .grid-area .story span.video-name, .grid-area .video span.story-name, .grid-area .video span.video-name {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  display: inline-block;
+}
+.grid-area .story button, .grid-area .video button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid-area .section-title {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.bordered_box {
+  border: 1px solid #CACACA;
+  background: #FFF;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bordered_box .img img {
+  width: 24px;
+  height: 24px;
+}
+.bordered_box .data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.bordered_box .data span.title {
+  color: #28508B;
+}
+.bordered_box .data span.info {
+  color: #292D32;
+}
+.bordered_box p {
+  color: #292D32;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.bordered_box.from_teacher, .bordered_box.sent_date, .bordered_box.message_box {
+  width: 50%;
+}
+.bordered_box.message p {
+  margin: 0;
+  line-height: normal;
+  font-size: 18px;
+  font-weight: 500;
+}
+.bordered_box#message-resposnse {
+  margin: 2em 0 0;
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.bordered_box#message-resposnse form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bordered_box#message-resposnse form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.modal .modal-content {
+  border-radius: 10px;
+}
+.modal .modal-body {
+  padding: 20px;
+}
+.modal .modal-footer {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.modal .modal-footer button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 15px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 9px;
+}
+.modal .modal-footer button img {
+  width: 35px;
+  height: 35px;
+}
+.modal .modal-footer button.primary {
+  background-color: #28508B;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+.modal .modal-footer button.outline-primary {
+  background-color: #FFF;
+  border: 1px solid #28508B;
+  color: #28508B;
+}
+.modal#myBooksModal .header, .modal#playAndLearn .header, .modal#read_and_think_modal .header, .modal#watchAndFun .header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal#myBooksModal .header .title img, .modal#playAndLearn .header .title img, .modal#read_and_think_modal .header .title img, .modal#watchAndFun .header .title img {
+  width: 80px;
+  height: 80px;
+}
+.modal#myBooksModal .header .title span, .modal#playAndLearn .header .title span, .modal#read_and_think_modal .header .title span, .modal#watchAndFun .header .title span {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal#myBooksModal .header .close, .modal#playAndLearn .header .close, .modal#read_and_think_modal .header .close, .modal#watchAndFun .header .close {
+  display: flex;
+}
+.modal#myBooksModal .info_details, .modal#playAndLearn .info_details, .modal#read_and_think_modal .info_details, .modal#watchAndFun .info_details {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+.modal#myBooksModal .info_details .book_img, .modal#playAndLearn .info_details .book_img, .modal#read_and_think_modal .info_details .book_img, .modal#watchAndFun .info_details .book_img {
+  position: relative;
+}
+.modal#myBooksModal .info_details .book_img .video_play, .modal#playAndLearn .info_details .book_img .video_play, .modal#read_and_think_modal .info_details .book_img .video_play, .modal#watchAndFun .info_details .book_img .video_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal#myBooksModal .info_details .info_list ul, .modal#playAndLearn .info_details .info_list ul, .modal#read_and_think_modal .info_details .info_list ul, .modal#watchAndFun .info_details .info_list ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.modal#myBooksModal .info_details .info_list ul li, .modal#playAndLearn .info_details .info_list ul li, .modal#read_and_think_modal .info_details .info_list ul li, .modal#watchAndFun .info_details .info_list ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal#myBooksModal .info_details .info_list ul li img, .modal#playAndLearn .info_details .info_list ul li img, .modal#read_and_think_modal .info_details .info_list ul li img, .modal#watchAndFun .info_details .info_list ul li img {
+  width: 24px;
+  height: 24px;
+}
+.modal#myBooksModal .info_details .info_list ul li span, .modal#playAndLearn .info_details .info_list ul li span, .modal#read_and_think_modal .info_details .info_list ul li span, .modal#watchAndFun .info_details .info_list ul li span {
+  color: #28508B;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=global-style.css.map */

@@ -1,0 +1,180 @@
+div.from-school-to-home {
+  margin-top: 1.5em;
+}
+div.from-school-to-home .chats-from-teatcher {
+  padding: 16px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  margin-bottom: 1em;
+}
+div.from-school-to-home .chats-from-teatcher button {
+  width: 100%;
+  text-align: initial;
+  font-weight: 700;
+  color: #28508B;
+  font-size: 20px;
+}
+div.from-school-to-home .table-resposnive table {
+  width: 100%;
+}
+div.from-school-to-home .table-resposnive table tr {
+  border: 1px solid #E0E0E0;
+}
+div.from-school-to-home .table-resposnive table th, div.from-school-to-home .table-resposnive table td {
+  padding: 16px;
+  color: #1A1A1A;
+  font-size: 20px;
+  font-weight: 700;
+}
+div.from-school-to-home .table-resposnive table th span {
+  margin: 0 5px;
+}
+div.from-school-to-home .table-resposnive table td {
+  background-color: #FFF;
+}
+div.from-school-to-home .table-resposnive table th.actions, div.from-school-to-home .table-resposnive table td.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+div.from-school-to-home .footer-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+div.from-school-to-home .footer-data .results span {
+  font-size: 18px;
+  font-weight: 700;
+}
+div.from-school-to-home .footer-data .paginations {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+div.from-school-to-home .footer-data .paginations .custom_pagination ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+div.from-school-to-home .footer-data .paginations .custom_pagination ul a {
+  width: 37.248px;
+  height: 45.964px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  color: #353535;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+div.from-school-to-home .footer-data .paginations .custom_pagination ul a.is-active {
+  background-color: #28508B;
+  color: #FFF;
+}
+div.from-school-to-home .footer-data .paginations .dropdown {
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  width: 100.881px;
+  height: 45.964px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+div.from-school-to-home .footer-data .paginations .dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+div.from-school-to-home .footer-data .paginations .page-number {
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  padding: 8px 5px;
+  width: 170.779px;
+  height: 45.964px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 700;
+}
+div.from-school-to-home .footer-data .paginations .page-number input {
+  width: 69.577px;
+  height: 34.228px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.modal .modal-content#success_content {
+  padding: 1em;
+  display: none;
+}
+.modal .modal-content#success_content img.success {
+  width: 200px;
+  height: 200px;
+  margin: 1em auto;
+}
+.modal .modal-content#success_content .success_message {
+  text-align: center;
+  justify-content: center;
+}
+.modal .modal-content#success_content .success_message p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal button.close {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+}
+.modal .documents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 2em;
+}
+.modal .documents .document {
+  background: #FFF;
+  border: 1px solid #292D32;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+.modal .documents .document .document-data {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.modal .documents .document .document-data .doc-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.modal .documents .document .document-data .doc-data span.file-name {
+  color: #28508B;
+  font-size: 18px;
+  font-weight: 700;
+}
+.modal .documents .document .document-data .doc-data span.file-size {
+  color: #292D32;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=from-school-to-home.css.map */
