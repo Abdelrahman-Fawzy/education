@@ -1,0 +1,307 @@
+.profile {
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+.profile .flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.profile .profile-info {
+  border-radius: 17px;
+  background: #FFF;
+  padding: 20px;
+}
+.profile .profile-info form {
+  display: flex;
+}
+.profile .profile-info form .profile_name_and_password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1.5;
+  gap: 1em;
+  border-left: 1px solid rgba(0, 0, 0, 0.23);
+}
+.profile .profile-info form .profile_name_and_password .img {
+  position: relative;
+}
+.profile .profile-info form .profile_name_and_password .img img {
+  width: 120px;
+  height: 120px;
+}
+.profile .profile-info form .profile_name_and_password .img label.change_user_img {
+  background: #FFF;
+  border-radius: 50%;
+  padding: 7px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+.profile .profile-info form .profile_name_and_password .img label.change_user_img input {
+  display: none;
+}
+.profile .profile-info form .profile_name_and_password .img label.change_user_img img {
+  width: 100%;
+  height: 100%;
+}
+.profile .profile-info form .profile_name_and_password > span {
+  color: #28508B;
+  font-weight: 700;
+  font-size: 25px;
+}
+.profile .profile-info form .profile_name_and_password button.primary {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #28508B;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  padding: 10px 12px;
+  text-align: center;
+}
+.profile .profile-info form .personal_data {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2em;
+  gap: 1em;
+}
+.profile .profile-info form .personal_data .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile .profile-info form .personal_data .header span.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #28508B;
+}
+.profile .profile-info form .personal_data .header button.primary {
+  background: #28508B;
+  border: none;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.profile .my_tasks, .profile .my_Books {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.profile .my_tasks .header, .profile .my_Books .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile .my_tasks .header span.title, .profile .my_Books .header span.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #28508B;
+}
+.profile .my_tasks .header button.primary, .profile .my_Books .header button.primary {
+  background: #28508B;
+  border: none;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.profile .my_tasks .custom_pagination ul, .profile .my_Books .custom_pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+.profile .my_tasks .custom_pagination ul a, .profile .my_Books .custom_pagination ul a {
+  width: 37.248px;
+  height: 45.964px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  color: #353535;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.profile .my_tasks .custom_pagination ul a.is-active, .profile .my_Books .custom_pagination ul a.is-active {
+  background-color: #28508B;
+  color: #FFF;
+}
+.profile .my_tasks .task {
+  background: #FFF;
+  border: 1px solid #292D32;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 10px;
+  margin-bottom: 1em;
+  transition: 0.5s;
+}
+.profile .my_tasks .task .img {
+  width: 100px;
+  height: 100px;
+}
+.profile .my_tasks .task .img img {
+  width: 100%;
+  height: 100%;
+}
+.profile .my_tasks .task h3.task-name {
+  color: #1A1A1A;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.profile .my_tasks .task .task-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile .my_tasks .task .task-date img {
+  width: 25px;
+  height: 25px;
+}
+.profile .my_tasks .task .task-date span {
+  color: #1A1A1A;
+  font-size: 14px;
+  font-weight: 700;
+}
+.profile .my_tasks .task .task-status {
+  width: 100%;
+  text-align: center;
+  border-radius: 71px;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.profile .my_tasks .task.waiting .task-status {
+  background: #ECD506;
+  color: #292D32;
+}
+.profile .my_tasks .task.done .task-status {
+  background: #70B14B;
+  color: #FFF;
+}
+.profile .my_Books .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
+.profile .my_Books .book img.book-img {
+  width: 100%;
+  height: 100%;
+}
+.profile .my_Books .book span.book-name {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.profile .my_Books .book .progress_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.7em;
+}
+.profile .my_Books .book .progress_bar .progress_line {
+  width: 150px;
+  height: 10px;
+  background: #D9D9D9;
+  border-radius: 9px;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile .my_Books .book .progress_bar .progress_line .bar {
+  width: 76%;
+  height: 100%;
+  background: #009D19;
+  border-radius: 9px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.profile .my_Books .book .progress_bar .progress_line .bar::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: #009D19;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  border-radius: 50%;
+}
+.profile .my_Books .book .progress_bar span.percent {
+  color: #28508B;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal .form-group, .personal_data .form-group {
+  margin: 0;
+}
+.modal .form-group:not(.phone, .email), .personal_data .form-group:not(.phone, .email) {
+  margin-bottom: 2rem;
+}
+.modal label, .personal_data label {
+  margin-bottom: 0;
+  color: #0E4058;
+  font-weight: 800;
+  font-size: 16px;
+}
+.modal input, .personal_data input {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  padding: 0;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #0E4058;
+  font-size: 16px;
+}
+.modal input:focus, .personal_data input:focus {
+  color: #0E4058;
+  border-color: #000;
+}
+
+.modal .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.modal .header .title {
+  color: #28508B;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=profile.css.map */

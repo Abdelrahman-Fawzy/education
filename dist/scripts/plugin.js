@@ -1,3 +1,25 @@
+
+window.onscroll = function() { scrollFunction() };
+
+let toTopButton = document.getElementById("toTopButton");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        toTopButton.style.opacity = "1";
+        toTopButton.style.visibility = "visible";
+    } else {
+        toTopButton.style.opacity = "0";
+        toTopButton.style.visibility = "hidden";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
 filterSelection("all", '')
 function filterSelection(c, event) {
     var x, i;
