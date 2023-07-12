@@ -1,0 +1,131 @@
+.login_page {
+  background-image: url("../assets/login/login_background.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 6em;
+  position: relative;
+}
+.login_page .login_box {
+  display: flex;
+  align-items: center;
+  border-radius: 37.5px;
+  border: 3px solid #FFF;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.login_page .login_box .form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 0px 37.5px 37.5px 0px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.2) 100%);
+  padding: 1em 3em;
+}
+.login_page .login_box .form h3 {
+  margin: 0;
+  color: #0E4058;
+  font-weight: 700;
+  font-size: 40.594px;
+  letter-spacing: -1.172px;
+}
+.login_page .login_box .form form {
+  width: 80%;
+}
+.login_page .login_box .form form .form-group label, .login_page .login_box .form form .form-group a.forget_pass {
+  color: rgba(14, 64, 88, 0.6);
+  font-size: 20.609px;
+  font-weight: 600;
+  margin: 0;
+}
+.login_page .login_box .form form .form-group a.forget_pass {
+  color: rgba(14, 64, 88, 0.4);
+  font-size: 20.609px;
+  font-weight: 600;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.login_page .login_box .form form .form-group input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+.login_page .login_box .form form .form-group input#email {
+  text-align: left;
+}
+.login_page .login_box .form form .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.login_page .login_box .form form .actions button {
+  width: 100%;
+  border-radius: 9.375px;
+  height: 50px;
+  font-size: 18.609px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border: 1px solid #28508B;
+}
+.login_page .login_box .form form .actions button.primary {
+  background: #28508B;
+  color: #F7F7F7;
+}
+.login_page .login_box .form form .actions button.outline_primary {
+  background: #FFF;
+  color: #28508B;
+}
+.login_page .login_box .form form .actions button.outline_primary a {
+  color: #28508B;
+}
+.login_page .login_box .form form .actions button a {
+  text-decoration: none;
+}
+.login_page .login_box .video {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  border-radius: 37.5px;
+}
+.login_page .login_box .video img {
+  border-radius: 40px;
+  height: 450px;
+  width: 500px;
+  transform: scaleX(-1);
+}
+
+img.ball1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 250px;
+}
+
+img.ball2 {
+  position: absolute;
+  bottom: 10em;
+  right: 0;
+  width: 200px;
+}
+
+/*# sourceMappingURL=login.css.map */
