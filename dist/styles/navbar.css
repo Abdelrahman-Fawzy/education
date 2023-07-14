@@ -266,7 +266,7 @@ nav.navbar .navbar-items .user-info .user-data .language .dropdown-menu button {
 
 @media (max-width: 576px) {
   nav.navbar .navbar-items {
-    margin: 0 1em;
+    margin: 0;
   }
 }
 
