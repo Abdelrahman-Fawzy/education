@@ -4,6 +4,7 @@
   background: #FFF;
   border-radius: 10px;
   margin: 1.5em 0;
+  flex-wrap: wrap;
 }
 .tasks_page .tasks_bar .title {
   display: flex;
@@ -19,6 +20,9 @@
   color: #28508B;
   font-size: 22px;
   font-weight: 700;
+}
+.tasks_page .tasks_bar .filtersButtons {
+  display: flex;
 }
 .tasks_page .tasks_bar .filtersButtons button {
   background: transparent;
@@ -192,13 +196,32 @@
 }
 .modal .documents .document .document-data .doc-data span.file-name {
   color: #28508B;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .modal .documents .document .document-data .doc-data span.file-size {
   color: #292D32;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+}
+.modal .documents .document .document-action button img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 991px) {
+  .tasks_page .tasks_bar .filtersButtons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .tasks_page .tasks_bar .filtersButtons button {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .modal .documents .document {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=tasks.css.map */

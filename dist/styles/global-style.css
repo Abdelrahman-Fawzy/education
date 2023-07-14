@@ -2,8 +2,6 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Cairo", sans-serif;
-  direction: rtl;
-  text-align: right;
   background-color: #F7F7F7;
 }
 
@@ -17,7 +15,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2em;
 }
 .intro .flex-box {
   display: flex;
@@ -32,10 +29,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.intro .flex-box .info .header .title img {
-  width: 80px;
-  height: 80px;
 }
 .intro .flex-box .info .header .title span {
   font-size: 25px;
@@ -56,9 +49,6 @@ body {
   width: 100%;
   height: 100%;
   border: none;
-}
-.intro .flex-box .info .filteration .form-group {
-  margin: 0;
 }
 .intro .flex-box .info .filteration .form-group label {
   font-size: 20px;
@@ -109,11 +99,57 @@ body {
   margin-top: 10px;
   display: inline-block;
 }
-.grid-area .story button, .grid-area .video button {
+.grid-area .story > button.watch, .grid-area .video > button.watch {
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+}
+.grid-area .story .img, .grid-area .video .img {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.grid-area .story .img .overlay, .grid-area .video .img .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%) 50%/cover no-repeat;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.grid-area .story .img:hover .overlay, .grid-area .video .img:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.grid-area .story .img:hover .actions, .grid-area .video .img:hover .actions {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.grid-area .story .actions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  position: absolute;
+  width: 100%;
+  bottom: -35%;
+  transition: all 0.3s ease-out;
+}
+.grid-area .story .actions button.action {
+  background: #FFF;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-area .story .actions button.action img {
+  width: 100%;
+  height: 100%;
 }
 .grid-area .section-title {
   color: #28508B;
@@ -122,6 +158,36 @@ body {
   margin-top: 10px;
   margin-bottom: 1em;
   display: inline-block;
+}
+
+.custom_pagination {
+  margin: 1em 0;
+}
+.custom_pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+.custom_pagination ul li {
+  width: 37.248px;
+  height: 45.964px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border: 1px solid #DCDCDC;
+  color: #353535;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.custom_pagination ul li.is-active {
+  background-color: #28508B;
+  color: #FFF;
 }
 
 .bordered_box {
@@ -140,7 +206,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .bordered_box .data span.title {
@@ -209,8 +275,8 @@ body {
   border-radius: 9px;
 }
 .modal .modal-footer button img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 .modal .modal-footer button.primary {
   background-color: #28508B;
@@ -249,7 +315,6 @@ body {
 .modal#myBooksModal .info_details .book_img .video_play, .modal#playAndLearn .info_details .book_img .video_play, .modal#read_and_think_modal .info_details .book_img .video_play, .modal#watchAndFun .info_details .book_img .video_play {
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 .modal#myBooksModal .info_details .info_list ul, .modal#playAndLearn .info_details .info_list ul, .modal#read_and_think_modal .info_details .info_list ul, .modal#watchAndFun .info_details .info_list ul {
@@ -277,7 +342,6 @@ body {
 #toTopButton {
   position: fixed;
   bottom: 1em;
-  right: 1em;
   background: #FFF;
   border: none;
   width: 50px;
@@ -287,11 +351,222 @@ body {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #toTopButton img {
   width: 100%;
   height: 100%;
+}
+
+.arabic_direction body {
+  direction: rtl;
+  text-align: right;
+}
+.arabic_direction #toTopButton {
+  right: 1em;
+}
+.arabic_direction .home-page .background_box .logo {
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.arabic_direction .home-page .background_box ul.activities li {
+  left: 0;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.myBooks a img {
+  right: 15%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.read_and_think a img {
+  right: 0%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.play_and_learn a img {
+  right: 25%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.watch_and_fun a img {
+  left: 0%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.print_and_colorize a img {
+  left: 0%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.tasks a img {
+  left: 0%;
+}
+.arabic_direction .home-page .background_box ul.activities li.activity.challenges a img {
+  left: 20%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.myBooks a img {
+  right: 20%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.read_and_think a img {
+  right: 0%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.play_and_learn a img {
+  right: 30%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.watch_and_fun a img {
+  left: 5%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.print_and_colorize a img {
+  left: 0%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.tasks a img {
+  left: 5%;
+}
+.arabic_direction .home-page .responsive_background_box .activity.activity.challenges a img {
+  left: 25%;
+}
+.arabic_direction .login_page form a.forget_pass {
+  text-align: left;
+}
+.arabic_direction .login_page form input#email {
+  text-align: left;
+}
+.arabic_direction .login_page img.ball1 {
+  left: 0;
+}
+.arabic_direction .login_page img.ball2 {
+  right: 0;
+}
+.arabic_direction .login_page img.responsive_ball1 {
+  left: 0;
+}
+.arabic_direction .login_page img.responsive_ball2 {
+  right: 0;
+}
+.arabic_direction nav.navbar .navbar-items .main_items .dropdown-menu {
+  left: auto;
+}
+.arabic_direction #responsiveNavbar .modal-dialog {
+  right: 0;
+}
+.arabic_direction .profile .profile_name_and_password .img label.change_user_img {
+  right: 0;
+}
+.arabic_direction .profile .personal_data {
+  padding-right: 2em;
+}
+.arabic_direction .profile .my_Books .book .progress_bar .progress_line .bar::after {
+  right: 0;
+}
+.arabic_direction .grid-area .story > button.watch, .arabic_direction .grid-area .video > button.watch {
+  left: 50%;
+}
+.arabic_direction .grid-area .story .img .overlay, .arabic_direction .grid-area .video .img .overlay {
+  left: 0;
+}
+.arabic_direction .modal button.close {
+  left: 1em;
+}
+.arabic_direction .modal#myBooksModal .info_details .video_play, .arabic_direction .modal#playAndLearn .info_details .video_play, .arabic_direction .modal#read_and_think_modal .info_details .video_play, .arabic_direction .modal#watchAndFun .info_details .video_play {
+  left: 50%;
+}
+@media (min-width: 992px) {
+  .arabic_direction .profile .profile-info .profile_name_and_password {
+    border-left: 1px solid rgba(0, 0, 0, 0.23);
+  }
+}
+
+.english_direction body {
+  direction: ltr;
+  text-align: left;
+}
+.english_direction #toTopButton {
+  left: 1em;
+}
+.english_direction .home-page .background_box .logo {
+  right: 50%;
+  transform: translate(50%, -100%);
+}
+.english_direction .home-page .background_box ul.activities li.activity.myBooks a img {
+  left: 15%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.read_and_think a img {
+  left: 0%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.play_and_learn a img {
+  left: 25%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.watch_and_fun a img {
+  right: 0%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.print_and_colorize a img {
+  right: 0%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.tasks a img {
+  right: 0%;
+}
+.english_direction .home-page .background_box ul.activities li.activity.challenges a img {
+  right: 20%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.myBooks a img {
+  left: 20%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.read_and_think a img {
+  left: 0%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.play_and_learn a img {
+  left: 30%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.watch_and_fun a img {
+  right: 5%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.print_and_colorize a img {
+  right: 0%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.tasks a img {
+  right: 5%;
+}
+.english_direction .home-page .responsive_background_box .activity.activity.challenges a img {
+  right: 25%;
+}
+.english_direction .login_page form a.forget_pass {
+  text-align: right;
+}
+.english_direction .login_page form input#email {
+  text-align: right;
+}
+.english_direction .login_page img.ball1 {
+  right: 0;
+}
+.english_direction .login_page img.ball2 {
+  left: 0;
+}
+.english_direction .login_page img.responsive_ball1 {
+  right: 0;
+}
+.english_direction .login_page img.responsive_ball2 {
+  left: 0;
+}
+.english_direction nav.navbar .navbar-items .main_items .dropdown-menu {
+  right: auto;
+}
+.english_direction #responsiveNavbar .modal-dialog {
+  left: 0;
+}
+.english_direction .profile .profile_name_and_password .img label.change_user_img {
+  left: 0;
+}
+.english_direction .profile .personal_data {
+  padding-left: 2em;
+}
+.english_direction .profile .my_Books .book .progress_bar .progress_line .bar::after {
+  left: 0;
+}
+.english_direction .grid-area .story > button.watch, .english_direction .grid-area .video > button.watch {
+  right: 50%;
+}
+.english_direction .grid-area .story .img .overlay, .english_direction .grid-area .video .img .overlay {
+  right: 0;
+}
+.english_direction .modal button.close {
+  right: 1em;
+}
+.english_direction .modal#myBooksModal .info_details .video_play, .english_direction .modal#playAndLearn .info_details .video_play, .english_direction .modal#read_and_think_modal .info_details .video_play, .english_direction .modal#watchAndFun .info_details .video_play {
+  right: 50%;
+}
+@media (min-width: 992px) {
+  .english_direction .profile .profile-info .profile_name_and_password {
+    border-right: 1px solid rgba(0, 0, 0, 0.23);
+  }
 }
 
 @-webkit-keyframes fadeEffect {
@@ -308,6 +583,69 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .intro {
+    padding: 2em;
+  }
+  .intro .header .title img {
+    width: 80px;
+    height: 80px;
+  }
+  .intro .search-input, .intro .form-group {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    padding: 1em;
+  }
+  .intro .header .title {
+    margin-bottom: 0.5em;
+  }
+  .intro .header .title img {
+    width: 70px;
+    height: 70px;
+  }
+  .intro .search-input, .intro .form-group {
+    margin-bottom: 1em;
+  }
+  .modal#myBooksModal .info_details, .modal#playAndLearn .info_details, .modal#read_and_think_modal .info_details, .modal#watchAndFun .info_details {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal#myBooksModal .info_details .book_img, .modal#playAndLearn .info_details .book_img, .modal#read_and_think_modal .info_details .book_img, .modal#watchAndFun .info_details .book_img {
+    width: 100%;
+    display: flex;
+  }
+  .modal#myBooksModal .info_details .book_img img, .modal#playAndLearn .info_details .book_img img, .modal#read_and_think_modal .info_details .book_img img, .modal#watchAndFun .info_details .book_img img {
+    margin: auto;
+  }
+  .modal#myBooksModal .info_details .info_list, .modal#playAndLearn .info_details .info_list, .modal#read_and_think_modal .info_details .info_list, .modal#watchAndFun .info_details .info_list {
+    width: 100%;
+  }
+  .modal#myBooksModal .info_details .info_list ul, .modal#playAndLearn .info_details .info_list ul, .modal#read_and_think_modal .info_details .info_list ul, .modal#watchAndFun .info_details .info_list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .modal#myBooksModal .info_details .info_list ul li span, .modal#playAndLearn .info_details .info_list ul li span, .modal#read_and_think_modal .info_details .info_list ul li span, .modal#watchAndFun .info_details .info_list ul li span {
+    font-size: 16px;
+  }
+  .modal#myBooksModal .bordered_box p, .modal#playAndLearn .bordered_box p, .modal#read_and_think_modal .bordered_box p, .modal#watchAndFun .bordered_box p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .modal#myBooksModal .modal-footer button, .modal#playAndLearn .modal-footer button, .modal#read_and_think_modal .modal-footer button, .modal#watchAndFun .modal-footer button {
+    width: 100%;
+  }
+  .modal#myBooksModal .info_details .book_img img, .modal#playAndLearn .info_details .book_img img {
+    width: 50%;
+  }
+  .modal#read_and_think_modal .info_details .book_img img, .modal#watchAndFun .info_details .book_img img {
+    width: 100%;
   }
 }
 

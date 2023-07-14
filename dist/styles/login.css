@@ -50,9 +50,6 @@
 }
 .login_page .login_box .form form .form-group a.forget_pass {
   color: rgba(14, 64, 88, 0.4);
-  font-size: 20.609px;
-  font-weight: 600;
-  text-align: left;
   display: block;
   text-decoration: none;
   margin-top: 10px;
@@ -65,9 +62,6 @@
   padding: 0;
   outline: none;
   box-shadow: none;
-}
-.login_page .login_box .form form .form-group input#email {
-  text-align: left;
 }
 .login_page .login_box .form form .actions {
   display: flex;
@@ -116,7 +110,6 @@
 img.ball1 {
   position: absolute;
   bottom: 0;
-  left: 0;
   z-index: 3;
   width: 250px;
 }
@@ -124,8 +117,41 @@ img.ball1 {
 img.ball2 {
   position: absolute;
   bottom: 10em;
-  right: 0;
   width: 200px;
+}
+
+img.responsive_ball1 {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 170px;
+}
+
+img.responsive_ball2 {
+  position: absolute;
+  bottom: 0em;
+  width: 120px;
+}
+
+@media (max-width: 1200px) {
+  .login_page {
+    padding: 2em;
+  }
+  .login_page .login_box .form {
+    width: 100%;
+    border-radius: 37.5px;
+    padding: 1em 0em;
+  }
+  .login_page .login_box .form h3 {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+  .login_page .login_box .form form {
+    width: 90%;
+  }
+  .login_page .login_box .form form label, .login_page .login_box .form form a.forget_pass, .login_page .login_box .form form .actions button {
+    font-size: 15px !important;
+  }
 }
 
 /*# sourceMappingURL=login.css.map */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="arabic_direction" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,18 @@
   <body>
     <nav class="navbar">
       <div class="navbar-items">
-        <div class="main_items">
+        <button class="transparent-button toggler d-md-none" data-toggle="modal" data-target="#responsiveNavbar"><img src="assets/icons/white_alignments.svg" alt="alignments"></button>
+        <div class="main_items d-none d-md-flex">
           <div class="logo"><img src="assets/logo.png" alt="logo"></div>
-          <button class="list">
-            <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
-          </button>
           <button class="home"><a href="index.html"> <img src="assets/icons/white_home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+          <div class="dropdown">
+            <button class="list dropdown-toggle" id="showList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="showList"><a class="dropdown-item" href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a><a class="dropdown-item" href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a><a class="dropdown-item" href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a><a class="dropdown-item" href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a><a class="dropdown-item" href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a><a class="dropdown-item" href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a><a class="dropdown-item" href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></div>
+          </div>
         </div>
-        <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+        <button class="from-school-to-home d-none d-lg-block"><a href="from-school-to-home.html"> 
             <div class="icons"><img src="assets/icons/white_courthouse.svg" alt="courthouse"><img src="assets/icons/white_swap.svg" alt="swap"><img src="assets/icons/white_building.svg" alt="building"></div><span>من المدرسة الى المنزل</span>
             <div class="views">
               <div class="view"><img src="assets/icons/eye.svg" alt="eye"></div>
@@ -46,6 +50,28 @@
         </div>
       </div>
     </nav>
+    <div class="modal fade" id="responsiveNavbar" tabindex="-1" aria-labelledby="responsiveNavbarLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+            <button class="responsive_home"><a href="index.html"> <img src="assets/icons/home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+            <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+                <div class="icons"><img src="assets/icons/courthouse.svg" alt="courthouse"><img src="assets/icons/swap.svg" alt="swap"><img src="assets/icons/building.svg" alt="building"></div><span>من المدرسة الى المنزل</span></a></button>
+            <ul class="list-unstyled">
+              <li><a href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a></li>
+              <li><a href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a></li>
+              <li><a href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a></li>
+              <li><a href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a></li>
+              <li><a href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a></li>
+              <li><a href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a></li>
+              <li><a href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="profile">
       <div class="container">
         <div class="flex-box">
@@ -57,10 +83,11 @@
                     <input type="file"><img src="assets/icons/picture.svg" alt="picture">
                   </label>
                 </div><span class="name">اسلام هشام صابر</span>
-                <button class="primary" type="button"><img src="assets/icons/password.svg" alt="password"><span>تغيير كلمة المرور</span></button>
+                <button class="primary d-none d-lg-block" type="button"><img src="assets/icons/password.svg" alt="password"><span>تغيير كلمة المرور</span></button>
               </div>
               <div class="personal_data">
                 <div class="header"> <span class="title">البيانات الشخصية</span>
+                  <button class="outline-primary d-lg-none" type="button"><span>تغيير كلمة المرور</span></button>
                   <button class="primary" data-toggle="modal" data-target="#myPersonalData" type="button"><img src="assets/icons/edit_user.svg" alt="edit"><span>تعديل البيانات الشخصية</span></button>
                 </div>
                 <div class="row">
@@ -119,7 +146,7 @@
                   <div class="task-status"><img src="assets/icons/done.svg" alt="done"><span>تمت المهمة</span></div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 task_column">
+              <div class="col-lg-4 col-md-12 task_column">
                 <div class="task waiting">
                   <div class="img"><img src="assets/icons/my_tasks.svg" alt="tasks"></div>
                   <h3 class="task-name" data-toggle="modal" data-target="#taskDetails">قصة</h3>
@@ -129,15 +156,16 @@
               </div>
             </div>
             <div class="custom_pagination">
-              <ul><a href="#">
-                  <li>&lt;</li></a><a class="is-active" href="#">
-                  <li>1</li></a><a href="#">
-                  <li>2</li></a><a href="#">
-                  <li>3</li></a><a href="#">
-                  <li>4</li></a><a href="#">
-                  <li>5</li></a><a href="#">
-                  <li>6</li></a><a href="#">
-                  <li>&gt;</li></a></ul>
+              <ul>
+                <li>&lt;<a href="#"></a></li>
+                <li class="is-active">1<a href="#"></a></li>
+                <li>2<a href="#"></a></li>
+                <li>3<a href="#"></a></li>
+                <li>4<a href="#"></a></li>
+                <li>5<a href="#"></a></li>
+                <li>6<a href="#"></a></li>
+                <li>&gt;<a href="#"></a></li>
+              </ul>
             </div>
           </div>
           <div class="my_Books">
@@ -145,7 +173,7 @@
               <button class="primary"><img src="assets/icons/white_clipboard-text.svg" alt="white_clipboard-text"><span>عرض جميع كتبى</span></button>
             </div>
             <div class="row"> 
-              <div class="col-lg col-md-4 col-sm-6">
+              <div class="col-lg col-md-4 col-sm-6 mb-3">
                 <div class="book"><img class="book-img" src="assets/my_books/book_1.png" alt="book1"><span class="book-name">أسم الكتاب</span>
                   <div class="progress_bar"><span class="percent">76%</span>
                     <div class="progress_line">
@@ -154,7 +182,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6">
+              <div class="col-lg col-md-4 col-sm-6 mb-3">
                 <div class="book"><img class="book-img" src="assets/my_books/book_2.png" alt="book2"><span class="book-name">أسم الكتاب</span>
                   <div class="progress_bar"><span class="percent">76%</span>
                     <div class="progress_line">
@@ -163,7 +191,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6">
+              <div class="col-lg col-md-4 col-sm-6 mb-3">
                 <div class="book"><img class="book-img" src="assets/my_books/book_3.png" alt="book3"><span class="book-name">أسم الكتاب</span>
                   <div class="progress_bar"><span class="percent">76%</span>
                     <div class="progress_line">
@@ -172,7 +200,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6">
+              <div class="col-lg col-md-4 col-sm-6 mb-3">
                 <div class="book"><img class="book-img" src="assets/my_books/book_4.png" alt="book4"><span class="book-name">أسم الكتاب</span>
                   <div class="progress_bar"><span class="percent">76%</span>
                     <div class="progress_line">
@@ -181,7 +209,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg col-md-4 col-sm-6">
+              <div class="col-lg col-md-4 col-sm-6 mb-3">
                 <div class="book"><img class="book-img" src="assets/my_books/book_5.png" alt="book5"><span class="book-name">أسم الكتاب</span>
                   <div class="progress_bar"><span class="percent">76%</span>
                     <div class="progress_line">
@@ -192,15 +220,16 @@
               </div>
             </div>
             <div class="custom_pagination">
-              <ul><a href="#">
-                  <li>&lt;</li></a><a class="is-active" href="#">
-                  <li>1</li></a><a href="#">
-                  <li>2</li></a><a href="#">
-                  <li>3</li></a><a href="#">
-                  <li>4</li></a><a href="#">
-                  <li>5</li></a><a href="#">
-                  <li>6</li></a><a href="#">
-                  <li>&gt;</li></a></ul>
+              <ul>
+                <li>&lt;<a href="#"></a></li>
+                <li class="is-active">1<a href="#"></a></li>
+                <li>2<a href="#"></a></li>
+                <li>3<a href="#"></a></li>
+                <li>4<a href="#"></a></li>
+                <li>5<a href="#"></a></li>
+                <li>6<a href="#"></a></li>
+                <li>&gt;<a href="#"></a></li>
+              </ul>
             </div>
           </div>
         </div>

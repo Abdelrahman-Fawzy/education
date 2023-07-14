@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="arabic_direction" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,18 @@
   <body>
     <nav class="navbar">
       <div class="navbar-items">
-        <div class="main_items">
+        <button class="transparent-button toggler d-md-none" data-toggle="modal" data-target="#responsiveNavbar"><img src="assets/icons/white_alignments.svg" alt="alignments"></button>
+        <div class="main_items d-none d-md-flex">
           <div class="logo"><img src="assets/logo.png" alt="logo"></div>
-          <button class="list">
-            <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
-          </button>
           <button class="home"><a href="index.html"> <img src="assets/icons/white_home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+          <div class="dropdown">
+            <button class="list dropdown-toggle" id="showList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="showList"><a class="dropdown-item" href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a><a class="dropdown-item" href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a><a class="dropdown-item" href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a><a class="dropdown-item" href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a><a class="dropdown-item" href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a><a class="dropdown-item" href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a><a class="dropdown-item" href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></div>
+          </div>
         </div>
-        <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+        <button class="from-school-to-home d-none d-lg-block"><a href="from-school-to-home.html"> 
             <div class="icons"><img src="assets/icons/white_courthouse.svg" alt="courthouse"><img src="assets/icons/white_swap.svg" alt="swap"><img src="assets/icons/white_building.svg" alt="building"></div><span>من المدرسة الى المنزل</span>
             <div class="views">
               <div class="view"><img src="assets/icons/eye.svg" alt="eye"></div>
@@ -46,27 +50,78 @@
         </div>
       </div>
     </nav>
+    <div class="modal fade" id="responsiveNavbar" tabindex="-1" aria-labelledby="responsiveNavbarLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+            <button class="responsive_home"><a href="index.html"> <img src="assets/icons/home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+            <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+                <div class="icons"><img src="assets/icons/courthouse.svg" alt="courthouse"><img src="assets/icons/swap.svg" alt="swap"><img src="assets/icons/building.svg" alt="building"></div><span>من المدرسة الى المنزل</span></a></button>
+            <ul class="list-unstyled">
+              <li><a href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a></li>
+              <li><a href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a></li>
+              <li><a href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a></li>
+              <li><a href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a></li>
+              <li><a href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a></li>
+              <li><a href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a></li>
+              <li><a href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="home-page">
-      <div class="container">
+      <div class="background_box d-none d-lg-block">
         <div class="logo"><img src="assets/logo.png" alt="logo"></div>
-        <div class="activities part-one">
-          <div class="activity my_books"><a href="myBooks.html">
-               كتبي<br>التفاعلية</a><img src="assets/icons/myBooks.svg" alt="myBooks"></div>
-          <div class="activity challenges"><a href="#">
-               المسابقات<br>و التحدي</a><img src="assets/icons/challenges.svg" alt="challenges"></div>
-        </div>
-        <div class="activities part-two">
-          <div class="activity read_and_think"><a href="read_and_think.html">
-               نقرأ<br>و نفكر</a><img src="assets/icons/read_and_think.svg" alt="read_and_think"></div>
-          <div class="activity my_tasks"><a href="tasks.html">مهامي</a><img src="assets/icons/my_tasks.svg" alt="myTasks"></div>
-        </div>
-        <div class="activities part-three">
-          <div class="activity play_and_learn"><a href="play_and_learn.html">
-               نلعب<br>و نتعلم</a><img src="assets/icons/play_and_learn.svg" alt="play_and_learn"></div>
-          <div class="activity watch_and_fun"><a href="watch_and_fun.html">
-               نشاهد<br>و نستمتع</a><img src="assets/icons/watch_and_fun.svg" alt="watch_and_fun"></div>
-          <div class="activity print_and_colorize"><a href="print_and_colorize.html">
-               نطبع<br>و نلون</a><img src="assets/icons/print_and_colorize.svg" alt="print_and_colorize"></div>
+        <ul class="list-unstyled activities m-0">
+          <li class="activity challenges"><a href="#">
+               المسابقات<br>و التحدي<img src="assets/icons/challenges.svg" alt="challenges"></a></li>
+          <li class="activity myBooks"><a href="myBooks.html">
+               كتبي<br>التفاعلية<img src="assets/icons/myBooks.svg" alt="myBooks"></a></li>
+          <li class="activity read_and_think"><a href="read_and_think.html">
+               نقرأ<br>و نفكر<img src="assets/icons/read_and_think.svg" alt="read_and_think"></a></li>
+          <li class="activity play_and_learn"><a href="play_and_learn.html">
+               نلعب<br>و نتعلم<img src="assets/icons/play_and_learn.svg" alt="play_and_learn"></a></li>
+          <li class="activity watch_and_fun"><a href="watch_and_fun.html">
+               نشاهد<br>و نستمتع<img src="assets/icons/watch_and_fun.svg" alt="watch_and_fun"></a></li>
+          <li class="activity print_and_colorize"><a href="print_and_colorize.html">
+               نطبع<br>و نلون<img src="assets/icons/print_and_colorize.svg" alt="print_and_colorize"></a></li>
+          <li class="activity tasks"><a href="tasks.html">مهامي<img src="assets/icons/my_tasks.svg" alt="myTasks"></a></li>
+        </ul>
+      </div>
+      <div class="background_box responsive_background_box d-lg-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-6"> 
+              <div class="activity myBooks"><a href="myBooks.html">
+                   كتبي<br>التفاعلية<img src="assets/icons/myBooks.svg" alt="myBooks"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity read_and_think"><a href="read_and_think.html">
+                   نقرأ<br>و نفكر<img src="assets/icons/read_and_think.svg" alt="read_and_think"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity play_and_learn"><a href="play_and_learn.html">
+                   نلعب<br>و نتعلم<img src="assets/icons/play_and_learn.svg" alt="play_and_learn"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity watch_and_fun"><a href="watch_and_fun.html">
+                   نشاهد<br>و نستمتع<img src="assets/icons/watch_and_fun.svg" alt="watch_and_fun"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity print_and_colorize"><a href="print_and_colorize.html">
+                   نطبع<br>و نلون<img src="assets/icons/print_and_colorize.svg" alt="print_and_colorize"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity tasks"><a href="tasks.html">مهامي<img src="assets/icons/my_tasks.svg" alt="myTasks"></a></div>
+            </div>
+            <div class="col-md-4 col-6"> 
+              <div class="activity challenges"><a href="#">
+                   المسابقات<br>و التحدي<img src="assets/icons/challenges.svg" alt="challenges"></a></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

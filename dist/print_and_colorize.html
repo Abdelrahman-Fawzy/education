@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="arabic_direction" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/home.css">
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-items">
-        <div class="main_items">
+        <button class="transparent-button toggler d-md-none" data-toggle="modal" data-target="#responsiveNavbar"><img src="assets/icons/white_alignments.svg" alt="alignments"></button>
+        <div class="main_items d-none d-md-flex">
           <div class="logo"><img src="assets/logo.png" alt="logo"></div>
-          <button class="list">
-            <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
-          </button>
           <button class="home"><a href="index.html"> <img src="assets/icons/white_home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+          <div class="dropdown">
+            <button class="list dropdown-toggle" id="showList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="showList"><a class="dropdown-item" href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a><a class="dropdown-item" href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a><a class="dropdown-item" href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a><a class="dropdown-item" href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a><a class="dropdown-item" href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a><a class="dropdown-item" href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a><a class="dropdown-item" href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></div>
+          </div>
         </div>
-        <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+        <button class="from-school-to-home d-none d-lg-block"><a href="from-school-to-home.html"> 
             <div class="icons"><img src="assets/icons/white_courthouse.svg" alt="courthouse"><img src="assets/icons/white_swap.svg" alt="swap"><img src="assets/icons/white_building.svg" alt="building"></div><span>من المدرسة الى المنزل</span>
             <div class="views">
               <div class="view"><img src="assets/icons/eye.svg" alt="eye"></div>
@@ -46,6 +49,28 @@
         </div>
       </div>
     </nav>
+    <div class="modal fade" id="responsiveNavbar" tabindex="-1" aria-labelledby="responsiveNavbarLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+            <button class="responsive_home"><a href="index.html"> <img src="assets/icons/home.svg" alt="home icon"><span>الرئيسية</span></a></button>
+            <button class="from-school-to-home"><a href="from-school-to-home.html"> 
+                <div class="icons"><img src="assets/icons/courthouse.svg" alt="courthouse"><img src="assets/icons/swap.svg" alt="swap"><img src="assets/icons/building.svg" alt="building"></div><span>من المدرسة الى المنزل</span></a></button>
+            <ul class="list-unstyled">
+              <li><a href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a></li>
+              <li><a href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a></li>
+              <li><a href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a></li>
+              <li><a href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a></li>
+              <li><a href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a></li>
+              <li><a href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a></li>
+              <li><a href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="intro">
       <div class="container">
         <div class="flex-box">
@@ -55,7 +80,7 @@
             </div>
             <div class="filteration">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="form-group">
                     <label for="title">العنوان</label>
                     <div class="search-input"><img src="assets/icons/search.svg" alt="search">
@@ -63,7 +88,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="form-group">
                     <label for="category">التصنيف</label>
                     <select class="form-control" id="category">
@@ -72,7 +97,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                   <div class="form-group">
                     <label for="class">الصف</label>
                     <select class="form-control" id="class">
@@ -84,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+          <div class="logo d-none d-md-block"><img src="assets/logo.png" alt="logo"></div>
         </div>
       </div>
     </div>
@@ -92,29 +117,105 @@
       <div class="container"><span class="section-title">صور ملفات للطباعة</span>
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="story"><img class="story-img" src="assets/story.png" alt="story"><span class="story-name">اسم صورة الملف</span></div>
+            <div class="story">
+              <div class="img"> <img class="story-img" src="assets/story.png" alt="story">
+                <div class="overlay"></div>
+                <div class="actions">
+                  <button class="transparent-button action"><img src="assets/icons/blue_download.svg" alt="download"></button>
+                  <button class="transparent-button action"><img src="assets/icons/blue_print.svg" alt="print"></button>
+                </div>
+              </div><span class="story-name">اسم صورة الملف</span>
+            </div>
           </div>
+        </div>
+        <div class="custom_pagination">
+          <ul>
+            <li>&lt;<a href="#"></a></li>
+            <li class="is-active">1<a href="#"></a></li>
+            <li>2<a href="#"></a></li>
+            <li>3<a href="#"></a></li>
+            <li>4<a href="#"></a></li>
+            <li>5<a href="#"></a></li>
+            <li>6<a href="#"></a></li>
+            <li>&gt;<a href="#"></a></li>
+          </ul>
         </div>
       </div>
     </div>

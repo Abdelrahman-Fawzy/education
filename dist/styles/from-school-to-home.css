@@ -25,9 +25,7 @@ div.from-school-to-home .table-resposnive table tr {
   border: 1px solid #E0E0E0;
 }
 div.from-school-to-home .table-resposnive table th, div.from-school-to-home .table-resposnive table td {
-  padding: 16px;
   color: #1A1A1A;
-  font-size: 20px;
   font-weight: 700;
 }
 div.from-school-to-home .table-resposnive table th span {
@@ -42,7 +40,6 @@ div.from-school-to-home .table-resposnive table th.actions, div.from-school-to-h
 }
 div.from-school-to-home .footer-data {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 1em 0;
 }
@@ -54,6 +51,7 @@ div.from-school-to-home .footer-data .paginations {
   display: flex;
   align-items: center;
   gap: 2em;
+  flex-wrap: wrap;
 }
 div.from-school-to-home .footer-data .paginations .custom_pagination ul {
   list-style: none;
@@ -138,7 +136,6 @@ div.from-school-to-home .footer-data .paginations .page-number input {
 .modal button.close {
   position: absolute;
   top: 1em;
-  left: 1em;
   z-index: 3;
 }
 .modal .documents {
@@ -155,7 +152,7 @@ div.from-school-to-home .footer-data .paginations .page-number input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: 49%;
 }
 .modal .documents .document .document-data {
   display: flex;
@@ -169,13 +166,74 @@ div.from-school-to-home .footer-data .paginations .page-number input {
 }
 .modal .documents .document .document-data .doc-data span.file-name {
   color: #28508B;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .modal .documents .document .document-data .doc-data span.file-size {
   color: #292D32;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+}
+.modal .documents .document .document-action button img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: 992px) {
+  .from-school-to-home .table-resposnive table th, .from-school-to-home .table-resposnive table td {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .from-school-to-home .footer-data {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 991px) {
+  .from-school-to-home .table-resposnive table th, .from-school-to-home .table-resposnive table td {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .from-school-to-home .footer-data {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  .modal .bordered_box {
+    width: 100%;
+  }
+  .modal .bordered_box .data {
+    font-size: 16px;
+  }
+  .modal .bordered_box p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .modal .documents .document {
+    width: 100%;
+  }
+  .modal .modal-footer button {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .from-school-to-home .table-resposnive table th, .from-school-to-home .table-resposnive table td {
+    padding: 7px;
+    font-size: 14px;
+  }
+  .from-school-to-home .table-resposnive table .actions {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .from-school-to-home .table-resposnive table .actions button {
+    width: 100%;
+  }
+  .from-school-to-home .table-resposnive table .actions button img {
+    width: 20px;
+    height: 20px;
+  }
+  .from-school-to-home .footer-data .paginations {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=from-school-to-home.css.map */
