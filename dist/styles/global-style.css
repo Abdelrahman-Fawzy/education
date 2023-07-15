@@ -608,6 +608,11 @@ body {
     margin-bottom: 0;
   }
 }
+@media (max-width: 991px) {
+  .responsive_background_box {
+    min-height: 85vh;
+  }
+}
 @media (max-width: 767px) {
   .intro {
     padding: 1em;

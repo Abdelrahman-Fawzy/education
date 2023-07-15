@@ -184,6 +184,8 @@
 
 .responsive_background_box {
   background-image: none;
+  display: flex;
+  align-items: center;
 }
 .responsive_background_box .activity a {
   background-size: cover;

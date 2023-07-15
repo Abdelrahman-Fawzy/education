@@ -229,8 +229,12 @@ nav.navbar .navbar-items .user-info .user-data .language .dropdown-menu button {
   gap: 1.5em;
 }
 #responsiveNavbar .modal-body .logo {
+  margin-top: 10em;
   width: 100%;
   text-align: center;
+}
+#responsiveNavbar .modal-body .logo img {
+  width: 130px;
 }
 #responsiveNavbar .modal-body button.responsive_home {
   border-radius: 14px;
