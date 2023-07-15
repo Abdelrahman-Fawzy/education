@@ -29,9 +29,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 15px;
 }
 .intro .flex-box .info .header .title span {
-  font-size: 25px;
+  font-size: 22px;
   color: #28508B;
   font-weight: 700;
 }
@@ -39,11 +40,15 @@ body {
   background: #FFF;
   border: 1px solid #C6C6C6;
   border-radius: 12px;
-  height: 50px;
+  height: 45px;
   padding: 5px 15px;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.intro .flex-box .info .filteration .search-input img {
+  width: 15px;
+  height: 15px;
 }
 .intro .flex-box .info .filteration .search-input input {
   width: 100%;
@@ -51,20 +56,23 @@ body {
   border: none;
 }
 .intro .flex-box .info .filteration .form-group label {
-  font-size: 20px;
+  font-size: 18px;
   color: #292D32;
   font-weight: 700;
 }
 .intro .flex-box .info .filteration .form-group input.form-control, .intro .flex-box .info .filteration .form-group select.form-control {
-  height: 50px;
+  height: 45px;
   padding: 5px 15px;
   border: 1px solid #C6C6C6;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 16px;
+}
+.intro .flex-box .logo img {
+  width: 150px;
 }
 
 .grid-area {
-  margin: 1em 0;
+  margin: 3em 0;
 }
 .grid-area .book {
   display: flex;
@@ -291,10 +299,16 @@ body {
 .modal#myBooksModal .header, .modal#playAndLearn .header, .modal#read_and_think_modal .header, .modal#watchAndFun .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.modal#myBooksModal .header .title, .modal#playAndLearn .header .title, .modal#read_and_think_modal .header .title, .modal#watchAndFun .header .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .modal#myBooksModal .header .title img, .modal#playAndLearn .header .title img, .modal#read_and_think_modal .header .title img, .modal#watchAndFun .header .title img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 .modal#myBooksModal .header .title span, .modal#playAndLearn .header .title span, .modal#read_and_think_modal .header .title span, .modal#watchAndFun .header .title span {
   color: #28508B;
@@ -365,53 +379,49 @@ body {
 .arabic_direction #toTopButton {
   right: 1em;
 }
-.arabic_direction .home-page .background_box .logo {
-  left: 50%;
-  transform: translate(-50%, -100%);
-}
-.arabic_direction .home-page .background_box ul.activities li {
+.arabic_direction .home-page .home_logo ul.activities li {
   left: 0;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.myBooks a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.myBooks a img {
   right: 15%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.read_and_think a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.read_and_think a img {
   right: 0%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.play_and_learn a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.play_and_learn a img {
   right: 25%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.watch_and_fun a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.watch_and_fun a img {
   left: 0%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.print_and_colorize a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.print_and_colorize a img {
   left: 0%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.tasks a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.tasks a img {
   left: 0%;
 }
-.arabic_direction .home-page .background_box ul.activities li.activity.challenges a img {
+.arabic_direction .home-page .home_logo ul.activities li.activity.challenges a img {
   left: 20%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.myBooks a img {
+.arabic_direction .responsive_background_box .activity.activity.myBooks a img {
   right: 20%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.read_and_think a img {
+.arabic_direction .responsive_background_box .activity.activity.read_and_think a img {
   right: 0%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.play_and_learn a img {
+.arabic_direction .responsive_background_box .activity.activity.play_and_learn a img {
   right: 30%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.watch_and_fun a img {
+.arabic_direction .responsive_background_box .activity.activity.watch_and_fun a img {
   left: 5%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.print_and_colorize a img {
+.arabic_direction .responsive_background_box .activity.activity.print_and_colorize a img {
   left: 0%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.tasks a img {
+.arabic_direction .responsive_background_box .activity.activity.tasks a img {
   left: 5%;
 }
-.arabic_direction .home-page .responsive_background_box .activity.activity.challenges a img {
+.arabic_direction .responsive_background_box .activity.activity.challenges a img {
   left: 25%;
 }
 .arabic_direction .login_page form a.forget_pass {
@@ -588,10 +598,11 @@ body {
 @media (min-width: 768px) {
   .intro {
     padding: 2em;
+    padding-top: 1rem;
   }
   .intro .header .title img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
   .intro .search-input, .intro .form-group {
     margin-bottom: 0;

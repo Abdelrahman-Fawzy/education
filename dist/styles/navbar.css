@@ -2,7 +2,7 @@ nav.navbar {
   border-radius: 0px 0px 9px 9px;
   background: #28508B;
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
-  padding: 0.6rem 1rem;
+  padding: 0.4rem 1rem;
 }
 nav.navbar .navbar-items {
   display: flex;
@@ -18,8 +18,8 @@ nav.navbar .navbar-items .main_items {
   gap: 1.5em;
 }
 nav.navbar .navbar-items .main_items .logo {
-  width: 89px;
-  height: 79px;
+  width: 69px;
+  height: 59px;
 }
 nav.navbar .navbar-items .main_items .logo img {
   width: 100%;
@@ -34,18 +34,22 @@ nav.navbar .navbar-items .main_items .dropdown button.list {
 }
 nav.navbar .navbar-items .main_items .dropdown button.list .icon {
   background: #FFF;
-  width: 41px;
-  height: 41px;
+  width: 35px;
+  height: 35px;
   border-radius: 10px;
-  padding: 15px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+nav.navbar .navbar-items .main_items .dropdown button.list .icon img {
+  width: 100%;
+  height: 100%;
+}
 nav.navbar .navbar-items .main_items .dropdown button.list span {
   color: #FFF;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 nav.navbar .navbar-items .main_items .dropdown button.list::after {
   display: none;
@@ -77,6 +81,15 @@ nav.navbar .navbar-items .main_items .dropdown .dropdown-menu a.dropdown-item sp
   font-size: 16px;
   font-weight: 700;
 }
+nav.navbar .navbar-items .main_items .dropdown .dropdown-menu a.dropdown-item.active {
+  background: #28508b;
+  color: #FFF;
+  border-radius: 30px;
+  padding: 5px;
+}
+nav.navbar .navbar-items .main_items .dropdown .dropdown-menu a.dropdown-item.active span {
+  color: #FFF;
+}
 nav.navbar .navbar-items .main_items button.home {
   border-radius: 14px;
   border: none;
@@ -89,9 +102,13 @@ nav.navbar .navbar-items .main_items button.home a {
   gap: 1em;
   text-decoration: none;
 }
+nav.navbar .navbar-items .main_items button.home a img {
+  width: 40px;
+  height: 40px;
+}
 nav.navbar .navbar-items .main_items button.home a span {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -100,7 +117,7 @@ nav.navbar .navbar-items button.from-school-to-home {
   border: 1px solid #FFF;
   background: transparent;
   color: #FFF;
-  padding: 10px;
+  padding: 7px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +138,7 @@ nav.navbar .navbar-items button.from-school-to-home a .icons {
 }
 nav.navbar .navbar-items button.from-school-to-home a span {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 nav.navbar .navbar-items button.from-school-to-home a .views {
@@ -142,6 +159,15 @@ nav.navbar .navbar-items .user-info {
   align-items: center;
   gap: 10px;
 }
+nav.navbar .navbar-items .user-info .user-img {
+  width: 50px;
+  height: 50px;
+}
+nav.navbar .navbar-items .user-info .user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
 nav.navbar .navbar-items .user-info .user-data .header {
   display: flex;
   align-items: center;
@@ -150,21 +176,34 @@ nav.navbar .navbar-items .user-info .user-data .header {
 }
 nav.navbar .navbar-items .user-info .user-data .header a.user-name {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+}
+nav.navbar .navbar-items .user-info .user-data .header button.logout img {
+  width: 30px;
+  height: 30px;
 }
 nav.navbar .navbar-items .user-info .user-data .language {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+nav.navbar .navbar-items .user-info .user-data .language img {
+  width: 30px;
+  height: 30px;
 }
 nav.navbar .navbar-items .user-info .user-data .language button.dropdown-toggle {
   color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 nav.navbar .navbar-items .user-info .user-data .language button.dropdown-toggle::after {
   display: none;
+}
+nav.navbar .navbar-items .user-info .user-data .language button.dropdown-toggle img {
+  width: 30px;
+  height: 30px;
 }
 nav.navbar .navbar-items .user-info .user-data .language .dropdown-menu button {
   display: block;

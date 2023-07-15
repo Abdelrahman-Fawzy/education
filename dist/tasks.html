@@ -11,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/tasks.css">
   </head>
-  <body>
-    <nav class="navbar">
+  <body class="my_tasks_Page">
+    <nav class="navbar" id="nav">
       <div class="navbar-items">
         <button class="transparent-button toggler d-md-none" data-toggle="modal" data-target="#responsiveNavbar"><img src="assets/icons/white_alignments.svg" alt="alignments"></button>
         <div class="main_items d-none d-md-flex">
-          <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+          <div class="logo"><a href="index.html"> <img src="assets/logo.png" alt="logo"></a></div>
           <button class="home"><a href="index.html"> <img src="assets/icons/white_home.svg" alt="home icon"><span>الرئيسية</span></a></button>
           <div class="dropdown">
             <button class="list dropdown-toggle" id="showList" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="icon"><img src="assets/icons/alignments.svg" alt=""></div><span>القائمة</span>
             </button>
-            <div class="dropdown-menu" aria-labelledby="showList"><a class="dropdown-item" href="myBooks.html"> <img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a><a class="dropdown-item" href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a><a class="dropdown-item" href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a><a class="dropdown-item" href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a><a class="dropdown-item" href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a><a class="dropdown-item" href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a><a class="dropdown-item" href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></div>
+            <div class="dropdown-menu" aria-labelledby="showList"><a class="dropdown-item" href="myBooks.html"><img src="assets/navbar_list_icons/myBooks.svg" alt="myBooks"><span>كتبى التفاعلية</span></a><a class="dropdown-item" href="read_and_think.html"> <img src="assets/navbar_list_icons/read_and_think.svg" alt="read_and_think"><span>نقرأ و نفكر</span></a><a class="dropdown-item" href="play_and_learn.html"> <img src="assets/navbar_list_icons/play_and_learn.svg" alt="play_and_learn"><span>نلعب و نتعلم</span></a><a class="dropdown-item" href="watch_and_fun.html"> <img src="assets/navbar_list_icons/watch_and_fun.svg" alt="watch_and_fun"><span>نشاهد و نستمتع</span></a><a class="dropdown-item" href="print_and_colorize.html"> <img src="assets/navbar_list_icons/print_and_colorize.svg" alt="print_and_colorize"><span>نطبع و نلون</span></a><a class="dropdown-item" href="tasks.html"> <img src="assets/navbar_list_icons/my_tasks.svg" alt="myTasks"><span>مهامي</span></a><a class="dropdown-item" href="#"> <img src="assets/navbar_list_icons/challenges.svg" alt="challenges"><span>المسابقات و التحدي</span></a></div>
           </div>
         </div>
         <button class="from-school-to-home d-none d-lg-block"><a href="from-school-to-home.html"> 
