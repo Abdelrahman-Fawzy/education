@@ -391,6 +391,10 @@ body {
 .arabic_direction .home-page .home_logo ul.activities li.activity.play_and_learn a img {
   right: 25%;
 }
+.arabic_direction .home-page .home_logo ul.activities li.activity.watch_and_fun a {
+  width: 281.824px;
+  height: 235.099px;
+}
 .arabic_direction .home-page .home_logo ul.activities li.activity.watch_and_fun a img {
   left: 0%;
 }
@@ -482,50 +486,50 @@ body {
 .english_direction #toTopButton {
   left: 1em;
 }
-.english_direction .home-page .background_box .logo {
-  right: 50%;
-  transform: translate(50%, -100%);
+.english_direction .home-page .home_logo ul.activities li.activity.myBooks a img {
+  right: 15%;
 }
-.english_direction .home-page .background_box ul.activities li.activity.myBooks a img {
-  left: 15%;
+.english_direction .home-page .home_logo ul.activities li.activity.read_and_think a img {
+  right: 0%;
 }
-.english_direction .home-page .background_box ul.activities li.activity.read_and_think a img {
+.english_direction .home-page .home_logo ul.activities li.activity.play_and_learn a img {
+  right: 25%;
+}
+.english_direction .home-page .home_logo ul.activities li.activity.watch_and_fun a {
+  width: 250.824px;
+  height: 210.099px;
+}
+.english_direction .home-page .home_logo ul.activities li.activity.watch_and_fun a img {
   left: 0%;
 }
-.english_direction .home-page .background_box ul.activities li.activity.play_and_learn a img {
-  left: 25%;
+.english_direction .home-page .home_logo ul.activities li.activity.print_and_colorize a img {
+  left: 0%;
 }
-.english_direction .home-page .background_box ul.activities li.activity.watch_and_fun a img {
-  right: 0%;
+.english_direction .home-page .home_logo ul.activities li.activity.tasks a img {
+  left: 0%;
 }
-.english_direction .home-page .background_box ul.activities li.activity.print_and_colorize a img {
-  right: 0%;
-}
-.english_direction .home-page .background_box ul.activities li.activity.tasks a img {
-  right: 0%;
-}
-.english_direction .home-page .background_box ul.activities li.activity.challenges a img {
-  right: 20%;
-}
-.english_direction .home-page .responsive_background_box .activity.activity.myBooks a img {
+.english_direction .home-page .home_logo ul.activities li.activity.challenges a img {
   left: 20%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.read_and_think a img {
+.english_direction .responsive_background_box .activity.activity.myBooks a img {
+  left: 20%;
+}
+.english_direction .responsive_background_box .activity.activity.read_and_think a img {
   left: 0%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.play_and_learn a img {
+.english_direction .responsive_background_box .activity.activity.play_and_learn a img {
   left: 30%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.watch_and_fun a img {
+.english_direction .responsive_background_box .activity.activity.watch_and_fun a img {
   right: 5%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.print_and_colorize a img {
+.english_direction .responsive_background_box .activity.activity.print_and_colorize a img {
   right: 0%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.tasks a img {
+.english_direction .responsive_background_box .activity.activity.tasks a img {
   right: 5%;
 }
-.english_direction .home-page .responsive_background_box .activity.activity.challenges a img {
+.english_direction .responsive_background_box .activity.activity.challenges a img {
   right: 25%;
 }
 .english_direction .login_page form a.forget_pass {
